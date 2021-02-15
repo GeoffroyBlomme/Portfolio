@@ -1,0 +1,46 @@
+$secondary: #f4f4f4;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+    height: 2000px;
+}
+
+.main-nav{
+    .container-fluid{
+        
+        #navbarNavAltMarkup{
+            .flex-fill{
+                align-items: center;
+                a{
+                   
+                    font-size: 1.2rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    .main-nav{
+        .container-fluid{
+            .navbar-brand{
+                margin-left: 2rem;
+            }
+            #navbarNavAltMarkup{
+                .flex-fill{
+                    a:first-of-type{
+                        margin: 0 0 0 auto;
+                    }
+                    a{
+                        margin: 1rem 2rem;
+                    }
+                    a:last-of-type{
+                        margin-right: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
